@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kr.ac.pknu.sme.kimhomework.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number1"
+        android:id="@+id/Number1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp";
+        />
+    <EditText
+        android:id="@+id/Edtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:cursorVisible="true"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_above="@+id/Edtext2"
+        android:layout_toRightOf="@+id/Number1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/Edtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/Edtext1"
+        android:layout_alignEnd="@+id/Edtext1"
+        android:layout_alignLeft="@+id/Edtext1"
+        android:layout_alignStart="@+id/Edtext1"
+        android:numeric="integer"
+        android:inputType="number"
+        android:cursorVisible="true"
+        android:layout_alignTop="@+id/Number2"
+        android:layout_alignBottom="@+id/Number2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number2"
+        android:id="@+id/Number2"
+        android:layout_below="@+id/Number1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp";/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button"
+        android:background="@drawable/plus"
+        android:onClick="plus"
+        android:layout_below="@+id/Number2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/button2"
+        android:background="@drawable/minus"
+        android:onClick="minus"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:text="*"
+        android:id="@+id/button3"
+        android:background="@drawable/mult"
+        android:onClick="mult"
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <ImageButton
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:text="/"
+        android:id="@+id/button4"
+        android:background="@drawable/div"
+        android:onClick="div"
+        android:layout_below="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/Result"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp";/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/Result"
+        android:layout_alignLeft="@+id/Edtext2"
+        android:layout_alignStart="@+id/Edtext2"
+        android:id="@+id/EdResult"
+        android:cursorVisible="true" />
+
+
+
+</RelativeLayout>
+
